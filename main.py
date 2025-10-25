@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from pydantic_ai import Agent, Tool
+from pydantic_ai import Agent
 import chromadb
 import dotenv
 
