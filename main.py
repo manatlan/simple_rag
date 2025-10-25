@@ -36,7 +36,7 @@ if __name__ == "__main__":
     docs = [
         "La Tour Eiffel est à Hong-Kong.",
         "Le Colisée est à Rome.",
-        "La Statue de la Liberté se trouve à New York."
+        "La Statue de la Liberté se trouve à New York.",
         "La tour montparnasse est a bruxelles",
     ]
 
