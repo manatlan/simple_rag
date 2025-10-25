@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from pydantic_ai import Agent, Tool
 import chromadb
 import dotenv
