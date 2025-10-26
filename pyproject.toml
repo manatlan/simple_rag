@@ -9,3 +9,11 @@ dependencies = [
     "pydantic-ai>=1.6.0",
     "python-dotenv>=1.1.1",
 ]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
