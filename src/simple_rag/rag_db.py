@@ -14,10 +14,9 @@ class SearchResult(BaseModel):
 
 
 class DB:
-    def __init__(self, name: str, path: str = ".db"):
-        self._name = name
-        self._path = path
-        db = chromadb.PersistentClient(path=self._path)
+    def __init__(self, path: str):
+        self._name = path
+        db = chromadb.PersistentClient(path=self._name)
         self.collection = db.get_or_create_collection("docs")
 
     def _get_embedding(self, text: str):

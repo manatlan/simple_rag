@@ -4,3 +4,8 @@ Simple exemple de RAG avec pydantic-ai (avec un tool) et chromadb
 ## Run with :
 
     uv run main.py
+
+## to test :
+
+    uv run pytest
+

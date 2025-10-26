@@ -2,16 +2,16 @@
 import unittest
 import os
 import shutil
-from simple_rag.rag_db import DB
+from src.simple_rag.rag_db import DB
 
 class TestDB(unittest.TestCase):
 
     def setUp(self):
         # Create a unique path for each test to ensure isolation
-        self.db_path = f".test_db_{unittest.TestCase.id(self)}"
+        self.db_path = f"TestDB"
         if os.path.exists(self.db_path):
             shutil.rmtree(self.db_path)
-        self.db = DB("TestDB", path=self.db_path)
+        self.db = DB("TestDB")
         self.test_file = "test_doc.md"
         with open(self.test_file, "w") as f:
             f.write("# Test Document\n\nThis is a test document.")

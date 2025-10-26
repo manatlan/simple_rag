@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
-from simple_rag.utils import split_markdown
+from src.simple_rag.utils import split_markdown
 
 class TestSplitMarkdown(unittest.TestCase):
 
